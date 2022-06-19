@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Responsive HTML5 Page Layout Template</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="logo"><img src="../static/logo.png">Hotel&nbsp;Mrunal</div>
+		<nav>  
+			<ul>
+				<li><a href="{{url_for('index')}}">Home</a>
+				<li><a href="{{url_for('about')}}">About</a>
+				<li><a href="{{url_for('contact')}}">Contact</a>
+				<li><a href="{{url_for('price')}}">price</a>
+				<li><a href="{{url_for('allusers')}}">All users</a>
+				<li><a href="{{url_for('search')}}">Search User</a>
+				
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<strong>This is a Home page</strong>
+	</section>
+	<section id="pageContent">
+		<main role="main">
+			<article>
+				<h2><b>Health & safety </b></h2>
+				</p>This property has taken extra health and hygiene measures to ensure that your safety is their priority</p>
+			</article>
+			<article>
+				<h2><b>Book Now</b></h2>
+				<p>Book Now Quick, Simple, Easy to Use.No reservation costs. Great rates.</p>
+			</article>
+			<article>
+				<h2><b>Secure Booking</b></h2>
+				<p>Quick, Simple, Easy to Use.No reservation costs. Great rates.Easy and Secure Online Booking.Read Real Reviews and Book Now!</p>
+			</article>
+			
+			<article>
+				<h2><b>Hotel Services and Facilities </b></h2>
+				<p>Hotel Facilities,Spa,Semi open & outdoor restaurant,Poolside bar,Car parking,Swimming pool/ Jacuzzi,Public computer,
+				Disable rooms & Interconnecting rooms,24 Hour security,Restaurant,Free WiFi,Room Service,water park,Breakfast(free),Air conditioning</p>
+			</article>
+			
+			<article>
+				<h2><b>Book for tommorow</b></h2>
+				<p>Easy, fast and secure booking!New deals listed every dayBook apartments and moreBookings instantly confirmed!Instant confirmation, 24/7 support</p>
+			</article>
+		</main>
+		<aside>
+			<div><img src="../static/xyz.png"></div>
+			<div>&nbsp;&nbsp;&nbsp;<img src="../static/abc.png"></div>
+			<div>&nbsp;&nbsp;<img src="../static/mnl.png"></div>
+		</aside>
+	</section>
+	<footer>
+		<address>
+			Contact : <a href="mailto:me@example.com">Mail me</a>
+		</address>
+	</footer>
+
+
+</body>
+
+</html>

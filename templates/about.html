@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Responsive HTML5 Page Layout Template</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="logo"><img src="../static/logo.png">Hotel&nbsp;Mrunal</div>
+		<nav>  
+			<ul>
+				<li><a href="{{url_for('index')}}">Home </a>
+				<li><a href="{{url_for('about')}}">About</a>
+				<li><a href="{{url_for('contact')}}">Contact</a>
+				<li><a href="{{url_for('price')}}">price</a>
+				<li><a href="{{url_for('allusers')}}">All users</a>
+				<li><a href="{{url_for('search')}}">Search User</a>
+			
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<strong>Facilities we provide:</strong>
+	</section>
+	
+	<section id="pageContent">
+	<div><img src="../static/hotelpark.png"> &nbsp;  <img src="../static/carparking.png"> &nbsp; <img src="../static/hotelcarr.png"></div>   
+	<div><img src="../static/mrunal.png"></div>
+	<div><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../static/pub.png"> &nbsp;&nbsp;&nbsp;<img src="../static/poolside.png">&nbsp; &nbsp;&nbsp;<img src="../static/image.png">   </div>
+	<div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../static/food.png">  <img src="../static/breakfast.png"> </div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../static/restaurant.png">&nbsp;&nbsp;&nbsp; <img src="../static/images.png"> &nbsp;&nbsp;&nbsp;<img src="../static/image.png">   </div>
+	<div></div>
+	<div></div>
+		<main role="main">
+			{{username}}<aside>
+			
+			
+			
+		</aside> <br>
+			
+			{% for item in mylist %}
+			
+				{{item}} <br>
+				
+			{% endfor %}
+			
+			
+		</main>
+		<aside>
+			
+		</aside>
+	</section>
+	<footer>
+		<address>
+			Contact: <a href="mailto:me@example.com">Mail me</a>
+		</address>
+	</footer>
+
+
+</body>
+
+</html>
